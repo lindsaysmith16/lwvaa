@@ -1,16 +1,275 @@
+/* Global Style */
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.025em;
+}
+
+h2{
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 53px;
+    letter-spacing: -0.025em;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 118%;
+    letter-spacing: 0.025em;
+}
+
+h4 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
+    
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.025em;
+}
+
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.025em;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.025em;
+}
+
 /* Header Nav Style */
 
 
 /* Hero Image Style */
+.heroImage {
+    background-image: url(../Images/young-voter-at-booth.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: grid;
+    align-content: center;  
+    justify-content: end;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "none none CTA CTA CTA CTA"
+}
 
+#CTA {
+    grid-area: CTA;
+    display: grid;
+    background: rgba(10, 88, 148,0.75);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    align-content: center;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+}
+
+#CTAButton {
+    display: grid;
+    background: #EAA932;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 45px;
+    align-items: center;
+    justify-items: center;
+    padding-right: 75px;
+    padding-left: 75px;
+    text-decoration: none;
+    color: #272727;
+    position: absolute;
+    top: 90%;
+    right: 100px;
+}
 
 /* Three Pillars Content Style */
+.intro {
+    background-color: #E8F1F7;
+    display: block;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+.threePillars {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #E8F1F7;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+    padding-bottom: 60px;
+}
 
+.pillarCard {
+    background-color: #0A5894;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 144px;
+    width: 33%;
+}
+.icons {
+    padding-right: 20px;
+    width: 58px;
+    height: 74px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.textTP {
+    line-height: 5px;
+    padding-right: 20px;
+}
+.textTP h5 {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.textTP p {
+    margin-top: 0;
+}
 /* Votes Guide Info Style */
+
+#twoColumnsInfo {
+    display: grid;
+    margin: 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "votersGuideInfo vote411Info";
+    position: relative;
+}
+
+.votersGuideInfo {
+    grid-area: votersGuideInfo;
+    padding-right: 40px;
+    border-right: 1px solid black;
+}
 
 
 /* Vote411 Info Style */
 
+.vote411Info {
+        grid-area: vote411Info;
+        padding-left: 40px;
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "vote411LogoStacked vote411About";
+}
 
+#vote411LogoStacked {
+    grid-area: vote411LogoStacked;
+    padding-right: 10px;
+}
+
+#vote411About {
+    grid-area: vote411About;
+    padding-top: 25px;
+   
+}
 /* Button Styles */
+
+.votersGuideButton {
+    display: grid;
+    background: #811F5E;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 45px;
+    align-items: center;
+    justify-items: center;
+    padding-right: 75px;
+    padding-left: 75px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: -50px;
+    left: 10%;
+}
+
+.votersGuideButtonText {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    line-height: 22px;
+}
+
+.vote411Button {
+    display: grid;
+    background: #811F5E;
+    border-radius: 5px;
+    height: 45px;
+    align-items: center;
+    justify-items: center;
+    padding-right: 75px;
+    padding-left: 75px;
+    position: absolute;
+    bottom: -50px;
+    right: 10%;
+
+}
+
+.vote411ButtonText {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    line-height: 22px;
+}
