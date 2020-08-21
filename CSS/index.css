@@ -3,7 +3,10 @@ body {
     font-family: 'Lato', sans-serif;
     font-family: 'Merriweather', serif;
 }
-
+#wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 h1 {
     font-family: 'Merriweather', serif;
     font-style: normal;
@@ -87,7 +90,8 @@ p {
     align-content: center;  
     justify-content: end;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "none none CTA CTA CTA CTA"
+    grid-template-areas: "none none CTA CTA CTA CTA";
+    position: relative;
 }
 
 #CTA {
@@ -97,10 +101,14 @@ p {
     padding-left: 20px;
     padding-right: 20px;
     color: white;
-    align-content: center;
+    align-items: center;
+    justify-items: end;
     position: absolute;
-    right: 5%;
-    top: 8%;
+    top: -120px;
+    right: 10%;
+    max-height: 200px;
+    width: auto;
+
 }
 
 #CTAButton {
@@ -140,6 +148,7 @@ p {
     padding-right: 5%;
     background-color: #E8F1F7;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     column-gap: 10px;
     padding-bottom: 60px;
@@ -150,7 +159,7 @@ p {
     color: white;
     display: flex;
     justify-content: center;
-    height: 144px;
+    min-height: 144px;
     width: 33%;
 }
 .icons {
@@ -214,6 +223,7 @@ p {
 
 .votersGuideButton {
     display: grid;
+    grid-area: votersGuideButton;
     background: #811F5E;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
@@ -248,6 +258,7 @@ p {
 
 .vote411Button {
     display: grid;
+    grid-area: vote411Button;
     background: #811F5E;
     border-radius: 5px;
     height: 45px;
@@ -272,4 +283,262 @@ p {
     text-transform: uppercase;
     letter-spacing: 0.075em;
     line-height: 22px;
+}
+
+@media only screen and (max-width: 1315px) {
+    h1 {
+        font-size: 58px;
+        line-height: 118.2%;
+    }
+
+    .vote411Info {
+        justify-content: space-around;
+    }
+
+    .vote411Button {
+        right: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .votersGuideButton {
+        left: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    h1 {
+        font-size: 46px;
+        line-height: 118.2%;
+    }
+    .heroImage {
+        height: 350px;
+    }
+    #CTA {
+        top: -100px;
+    }
+    .icons {
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 38px;
+        line-height: 118.2%;
+    }
+
+    #CTAButton{
+        padding-left: 50px;
+        padding-right: 50px;
+        right:75px;
+    }
+
+    #CTA {
+        top: -75px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .pillarCard {
+        flex-direction: column;
+        align-items: center
+    }
+    
+    .textTP {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .icons {
+        padding-top: 20px;
+    }
+
+    .vote411Info {
+        grid-template-columns: 1fr;
+        grid-template-rows: .4fr 1fr;
+        grid-template-areas: "vote411LogoStacked" "vote411About";
+        justify-content: center;
+        align-items: top;
+        padding-top: 0px;
+    }
+
+    #vote411LogoStacked {
+        justify-self: center;
+        transform: scale(0.7);
+
+    }
+    
+    #vote411About {
+        padding-top: 0px;
+    }
+
+    .votersGuideButton {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .vote411Button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+        line-height: 118.2%;
+   }
+
+   #CTAButton{
+    padding-left: 30px;
+    padding-right: 30px;
+    right: 50px;
+    }
+    #CTA {
+        top: -50px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .votersGuideButton {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .vote411ButtonText {
+        font-weight: normal;
+        letter-spacing: 0.025em;
+    }
+
+    .vote411Button {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .votersGuideButtonText {
+        font-weight: normal;
+        letter-spacing: 0.025em;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+        line-height: 118.2%;
+        letter-spacing: -0.025em;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 118.2%;
+        letter-spacing: -0.025em;
+    }
+
+    #CTA {
+        height: 105px;
+        padding-left: 10px;
+        padding-right: 10px;
+        min-width: 75%;
+    }
+
+    .heroImage {
+        height: 250px;
+    }
+
+    #CTAButton{
+        padding-left: 20px;
+        padding-right: 20px;
+        right: 30px;
+        }
+    
+    .threePillars {
+        flex-direction: column;
+        row-gap: 10px;
+        align-content: space-around;
+    }
+    .pillarCard {
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+    }
+    .icons {
+        padding-top: 0;
+    }
+
+    #twoColumnsInfo {
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr 1fr 2fr;
+        grid-template-areas: "votersGuideInfo" "votersGuideButton" "vote411Info";
+        justify-items: center;
+        align-items: center;
+    }
+    .votersGuideInfo {
+        padding-right: 20px;
+        border-right: none;
+    }
+
+    .vote411Info {
+        padding-left: 0px;
+    }
+
+    #vote411LogoStacked {
+        transform: scale(1);
+    }
+
+    .votersGuideButton {
+        width: 250px;
+        left: 20%;
+        top: 0;
+        text-align: center;
+    }
+
+    .vote411Button {
+        left: 20%;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    h1 {
+        font-size: 20px;
+        line-height: 118.2%;
+        letter-spacing: -0.025em;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 118.2%;
+        letter-spacing: -0.025em;
+    }
+
+    #CTA {
+        height: 120px;
+    }
+
+    .heroImage {
+        height: 250px;
+    }
+
+    #CTAButton{
+        padding-left: 10px;
+        padding-right: 10px;
+        right: 15px;
+        }
+    
+    .votersGuideButton {
+        left: 10%;
+        width: 250px;
+    }
+    
+    .vote411Button {
+         left: 10%;
+         width:250px;
+    }
 }
