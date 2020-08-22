@@ -1,0 +1,49 @@
+.card {
+    margin-top: 60px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "group image"
+    "group2 image"
+}
+
+.group {
+    grid-area: group;
+    max-width: 600px;
+    max-height: fit-content;
+}
+
+.group2 {
+    grid-area: group2;
+    max-width: 600px;
+    max-height: fit-content;
+}
+
+.image {
+    grid-area: image;
+    max-width: 600px;
+    max-height: auto;
+  }
+
+.card2 {
+    margin-top: 60px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "image group"
+    "image group2"
+}
+
+h4 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
