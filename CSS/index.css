@@ -13,7 +13,6 @@ h1 {
     font-weight: bold;
     font-size: 68px;
     line-height: 65px;
-    display: flex;
     align-items: center;
     text-align: right;
     letter-spacing: -0.025em;
@@ -71,7 +70,6 @@ p {
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    display: flex;
     align-items: center;
     letter-spacing: 0.025em;
 }
@@ -101,8 +99,6 @@ p {
     padding-left: 20px;
     padding-right: 20px;
     color: white;
-    align-items: center;
-    justify-items: end;
     position: absolute;
     top: -120px;
     right: 10%;
@@ -119,6 +115,7 @@ p {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
+    letter-spacing: 0.075em;
     text-transform: uppercase;
     height: 45px;
     align-items: center;
@@ -189,6 +186,7 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "votersGuideInfo vote411Info";
     position: relative;
+    margin-bottom: 100px;
 }
 
 .votersGuideInfo {
@@ -346,13 +344,15 @@ p {
 
     .pillarCard {
         flex-direction: column;
-        align-items: center
+        align-items: center;
     }
     
     .textTP {
         padding-left: 20px;
         padding-right: 20px;
+        text-align: left;
     }
+
     
     .icons {
         padding-top: 20px;
