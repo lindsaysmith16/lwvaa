@@ -83,8 +83,11 @@ p {
     flex-direction: column;
     max-width: 1440px;
     padding-top: 31px;
+    padding-left: 31px;
+    padding-right: 31px;
     height: 190px;
     margin: 0 auto;
+    /* border: 1px solid black; */
     background-color: #4D1E53;
 }
 
@@ -97,7 +100,7 @@ p {
     display: flex;
     justify-content: center;
     position: absolute;
-    margin-left: 720px;
+    margin-left: 835px;
     background: #EAA932;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
@@ -112,7 +115,6 @@ p {
 .makeAdonationButtonText {
     text-decoration: none;
     color: #4D1E53;
-    text-align: center;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -127,7 +129,7 @@ p {
 .searchBar {
     display: flex;
     position: absolute;
-    margin-left: 1031px;
+    margin-left: 1151px;
     background: white;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
@@ -165,6 +167,7 @@ p {
 
 .navBar {
     display: flex;
+    justify-content: space-between;
 }
 
 .primaryNav{
@@ -188,7 +191,9 @@ p {
     text-transform: uppercase;
     border: none;
     color: white;
-    width: 160px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     height: 61px; 
     transition: 0.3s;
@@ -207,7 +212,9 @@ p {
     text-transform: uppercase;
     border: none;
     color: white;
-    width: 169px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     height: 61px;
     transition: 0.3s;
@@ -226,7 +233,9 @@ p {
     text-transform: uppercase;
     border: none;
     color: white;
-    width: 188px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     height: 61px; 
     transition: 0.3s;
@@ -245,7 +254,9 @@ p {
     text-transform: uppercase;
     border: none;
     color: white;
-    width: 188px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     height: 61px; 
     transition: 0.3s;
@@ -264,7 +275,9 @@ p {
     text-transform: uppercase;
     border: none;
     color: white;
-    width: 188px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     height: 61px; 
     transition: 0.3s;
@@ -283,7 +296,9 @@ p {
     text-transform: uppercase;
     border: none;
     color: white;
-    width: 188px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     height: 61px; 
     transition: 0.3s;
@@ -302,7 +317,9 @@ p {
     text-transform: uppercase;
     border: none;
     color: white;
-    width: 188px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     height: 61px; 
     transition: 0.3s;
