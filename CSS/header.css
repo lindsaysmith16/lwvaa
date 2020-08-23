@@ -4,8 +4,8 @@ body {
     font-family: 'Merriweather', serif;
 }
 #wrap {
-    max-width: 1440px;
     margin: 0 auto;
+    background-color: #4D1E53;
 }    
 h1 {
     font-family: 'Merriweather', serif;
@@ -78,38 +78,35 @@ p {
 
 
 #navContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
     max-width: 1440px;
+    padding-top: 31px;
+    height: 190px;
     margin: 0 auto;
     background-color: #4D1E53;
 }
 
 .logoContainer {
-    margin-top: 31px;
 }
 
 /* Button Styles */
 
 .makeAdonationButton {
-    display: grid;
-    grid-area: makeAdonationButton;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 720px;
     background: #EAA932;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
     text-transform: uppercase;
-    height: 45px;
-    align-items: center;
-    justify-items: center;
-    padding-right: 75px;
-    padding-left: 75px;
-    margin-top: 33px;
+    width: 288px;
     text-decoration: none;
     color: #4D1E53;
-    position: absolute;
-    bottom: -51px;
-    left: 10%;
 }
 
 .makeAdonationButtonText {
@@ -119,78 +116,75 @@ p {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16pt;
+    line-height: 45px;
     text-transform: uppercase;
     letter-spacing: 0.075em;
-    line-height: 22px;
 }
 
 /* Search Bar */
 
 .searchBar {
-    display: grid;
-    grid-area: searchBar;
+    display: flex;
+    position: absolute;
+    margin-left: 1031px;
     background: white;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
-    height: 45px;
-    align-items: left;
-    justify-items: left;
-    padding-right: 75px;
-    padding-left: 75px;
-    margin-top: 33px;
+    width: 288px;
     text-decoration: none;
     color: #4D1E53;
-    position: absolute;
-    bottom: -51px;
-    left: 10%;
+}
+
+.magBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8F1F7;
+    margin: 3px;
+    height: 39px;
+    width: 39px;
+    border-radius: 3px;
 }
 
 .searchBarText {
     text-decoration: none;
     color: #4D1E53;
-    text-align: left;
+    text-align: center;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
+    font-size: 16pt;
+    line-height: 45px;
     letter-spacing: 0.075em;
-    line-height: 22px;
 }
 
 /* Navigation Menu Items */
 
+.navBar {
+    display: flex;
+}
+
 .primaryNav{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    color: white;
-    grid-template-areas:
-    "hover"
-    "disabled"
-    ;
     height: 61px;
+    margin-top: 49px;
 }
 
 .homeIcon {
+    background-color: #4D1E53;
+    padding-top: 12px;
     width: 50px;
-    height: 61px;
+    height: 49px;
 }
 
 .votersGuide {
-    grid-area: hover;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14pt;
     text-transform: uppercase;
     border: none;
     color: white;
@@ -205,12 +199,11 @@ p {
 }
 
 .voterInfo {
-    grid-area: hover;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14pt;
     text-transform: uppercase;
     border: none;
     color: white;
@@ -225,12 +218,11 @@ p {
 }
 
 .getInvolved {
-    grid-area: hover;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14pt;
     text-transform: uppercase;
     border: none;
     color: white;
@@ -245,12 +237,11 @@ p {
 }
 
 .membership {
-    grid-area: hover;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14pt;
     text-transform: uppercase;
     border: none;
     color: white;
@@ -265,12 +256,11 @@ p {
 }
 
 .newsAndEvents {
-    grid-area: hover;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14pt;
     text-transform: uppercase;
     border: none;
     color: white;
@@ -285,12 +275,11 @@ p {
 }
 
 .aboutUs {
-    grid-area: hover;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14pt;
     text-transform: uppercase;
     border: none;
     color: white;
@@ -305,12 +294,11 @@ p {
 }
 
 .contactUs {
-    grid-area: hover;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14pt;
     text-transform: uppercase;
     border: none;
     color: white;
