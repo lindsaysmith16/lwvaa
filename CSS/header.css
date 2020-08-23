@@ -80,6 +80,7 @@ p {
 #navContainer {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: #4D1E53;
 }
 
 .logoContainer {
@@ -170,7 +171,6 @@ p {
     grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    font-family: helvetica, arial, sans-serif;
     color: white;
     grid-template-areas:
     "hover"
@@ -187,11 +187,16 @@ p {
 .votersGuide {
     grid-area: hover;
     background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
     border: none;
     color: white;
     width: 160px;
     text-align: center;
-    height: 50px; 
+    height: 61px; 
     transition: 0.3s;
 }
  /* active state */
@@ -199,44 +204,59 @@ p {
     border-top: 3px solid #E8F1F7
 }
 
-.votersInfo {
+.voterInfo {
     grid-area: hover;
     background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
     border: none;
     color: white;
     width: 169px;
     text-align: center;
-    height: 50px; 
+    height: 61px;
     transition: 0.3s;
 }
  /* active state */
-.votersInfo:hover {
+.voterInfo:hover {
     border-top: 3px solid #E8F1F7
 }
 
 .getInvolved {
     grid-area: hover;
     background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
     border: none;
     color: white;
     width: 188px;
     text-align: center;
-    height: 50px; 
+    height: 61px; 
     transition: 0.3s;
 }
  /* active state */
-.vgetInvolved:hover {
+.getInvolved:hover {
     border-top: 3px solid #E8F1F7
 }
 
 .membership {
     grid-area: hover;
     background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
     border: none;
     color: white;
     width: 188px;
     text-align: center;
-    height: 50px; 
+    height: 61px; 
     transition: 0.3s;
 }
  /* active state */
@@ -247,11 +267,16 @@ p {
 .newsAndEvents {
     grid-area: hover;
     background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
     border: none;
     color: white;
     width: 188px;
     text-align: center;
-    height: 50px; 
+    height: 61px; 
     transition: 0.3s;
 }
  /* active state */
@@ -262,11 +287,16 @@ p {
 .aboutUs {
     grid-area: hover;
     background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
     border: none;
     color: white;
     width: 188px;
     text-align: center;
-    height: 50px; 
+    height: 61px; 
     transition: 0.3s;
 }
  /* active state */
@@ -277,11 +307,16 @@ p {
 .contactUs {
     grid-area: hover;
     background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
     border: none;
     color: white;
     width: 188px;
     text-align: center;
-    height: 50px; 
+    height: 61px; 
     transition: 0.3s;
 }
  /* active state */
