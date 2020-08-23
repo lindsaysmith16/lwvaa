@@ -6,7 +6,7 @@ body {
 #wrap {
     max-width: 1440px;
     margin: 0 auto;
-}
+}    
 h1 {
     font-family: 'Merriweather', serif;
     font-style: normal;
@@ -73,3 +73,220 @@ p {
     align-items: center;
     letter-spacing: 0.025em;
 }
+
+/* Nav Elements */
+
+
+#navContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logoContainer {
+    margin-top: 31px;
+}
+
+/* Button Styles */
+
+.makeAdonationButton {
+    display: grid;
+    grid-area: makeAdonationButton;
+    background: #EAA932;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 45px;
+    align-items: center;
+    justify-items: center;
+    padding-right: 75px;
+    padding-left: 75px;
+    margin-top: 33px;
+    text-decoration: none;
+    color: #4D1E53;
+    position: absolute;
+    bottom: -51px;
+    left: 10%;
+}
+
+.makeAdonationButtonText {
+    text-decoration: none;
+    color: #4D1E53;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    line-height: 22px;
+}
+
+/* Search Bar */
+
+.searchBar {
+    display: grid;
+    grid-area: searchBar;
+    background: white;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 45px;
+    align-items: left;
+    justify-items: left;
+    padding-right: 75px;
+    padding-left: 75px;
+    margin-top: 33px;
+    text-decoration: none;
+    color: #4D1E53;
+    position: absolute;
+    bottom: -51px;
+    left: 10%;
+}
+
+.searchBarText {
+    text-decoration: none;
+    color: #4D1E53;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    line-height: 22px;
+}
+
+/* Navigation Menu Items */
+
+.primaryNav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-family: helvetica, arial, sans-serif;
+    color: white;
+    grid-template-areas:
+    "hover"
+    "disabled"
+    ;
+    height: 61px;
+}
+
+.homeIcon {
+    width: 50px;
+    height: 61px;
+}
+
+.votersGuide {
+    grid-area: hover;
+    background-color: #4D1E53;
+    border: none;
+    color: white;
+    width: 160px;
+    text-align: center;
+    height: 50px; 
+    transition: 0.3s;
+}
+ /* active state */
+.votersGuide:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.votersInfo {
+    grid-area: hover;
+    background-color: #4D1E53;
+    border: none;
+    color: white;
+    width: 169px;
+    text-align: center;
+    height: 50px; 
+    transition: 0.3s;
+}
+ /* active state */
+.votersInfo:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.getInvolved {
+    grid-area: hover;
+    background-color: #4D1E53;
+    border: none;
+    color: white;
+    width: 188px;
+    text-align: center;
+    height: 50px; 
+    transition: 0.3s;
+}
+ /* active state */
+.vgetInvolved:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.membership {
+    grid-area: hover;
+    background-color: #4D1E53;
+    border: none;
+    color: white;
+    width: 188px;
+    text-align: center;
+    height: 50px; 
+    transition: 0.3s;
+}
+ /* active state */
+.membership:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.newsAndEvents {
+    grid-area: hover;
+    background-color: #4D1E53;
+    border: none;
+    color: white;
+    width: 188px;
+    text-align: center;
+    height: 50px; 
+    transition: 0.3s;
+}
+ /* active state */
+.newsAndEvents:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.aboutUs {
+    grid-area: hover;
+    background-color: #4D1E53;
+    border: none;
+    color: white;
+    width: 188px;
+    text-align: center;
+    height: 50px; 
+    transition: 0.3s;
+}
+ /* active state */
+.aboutUs:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.contactUs {
+    grid-area: hover;
+    background-color: #4D1E53;
+    border: none;
+    color: white;
+    width: 188px;
+    text-align: center;
+    height: 50px; 
+    transition: 0.3s;
+}
+ /* active state */
+.contactUs:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+
