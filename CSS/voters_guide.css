@@ -226,6 +226,15 @@ p {
     border: none;
 }
 
+.widgetButton:hover {
+    background-color: #3582A5;
+}
+
+.widgetButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+}
+
 .selectBox {
 	position: relative;	
 }
@@ -330,6 +339,10 @@ p {
     margin-top:0;
     border: none;
 }
+.votersGuideButton:focus{
+    outline: 3px solid #EAA932;
+}
+
 
 .buttons {
     grid-area: buttons;
