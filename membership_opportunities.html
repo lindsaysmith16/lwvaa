@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/membership_opportunities.css">
     <title>League of Women Voters Austin Area - Membership Volunteer Opportunities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <div class="card">
         <div class="group">
-            <h4>Voter Services Group</h4>
+            <h4>Voter Services Group<img src="../lwvaa/IMAGES/smallPlus.png" style="float:right" /></h4>
             <p>Engage, Register, Educate This group leads all voter registration events as well as creates and distributes the Voters Guide, the resource for candidate information for local voters.</p>
         </div>
         <div class="group2">
-            <h4>Programs</h4>
+            <h4>Programs<img src="../lwvaa/IMAGES/smallPlus.png" style="float:right" /></h4>
             <p>This group researches and develops issue positions; advocates on behalf of those positions; observes local governmental activities; and prepares programs and events to educate and engage members and the general public.</p>
         </div>
         <img class="image" src="Images/Sign Girl.jpg">
@@ -22,11 +23,19 @@
     
     <div class="card2">
         <div class="group">
-            <h4>Organizational Infrastructure</h4>
-            <p>The glue to hold it all up! This group provides the necessary support for the League and its members.</p>         
-        </div>
+            <div id="toggle">
+              <div id="toggleName"><h4>Organizational Infrastructure <img src="../lwvaa/IMAGES/smallPlus.png" style="float:right" /></h4></div>
+              <div id="toggleDesc"><p>The glue to hold it all up!  This group provides the necessary support for the League and its members.</p></div>
+            <ul id="dropdown">
+              <div id= "toggle2name"><li><h4>Community Relations, Civic Engagement & Outreach Team<img src="../lwvaa/IMAGES/smallPlus.png" style="float:right" ></h4></li></div>
+                <div id="toggle2"><p>The Community Relations Team’s purpose is to build and sustain relationships between the League and other community groups, civic organizations, businesses, and underrepresented communities to: Empower Voters and Defend Democracy. The team’s overarching goal is for all communities throughout the Austin Area to be informed about the League’s nonpartisan mission, vision, and various opportunities, and to feel empowered to vote and get involved. This team is looking for volunteers who enjoy community outreach. Community Relations team members represent the League at a variety of community events and nonpartisan forums via a presentation table, general attendance, or a pre-approved speaking opportunity or panel discussion. The team also collaborates with organizations and business groups to design and co-host nonpartisan, community-focused events.</p></div>
+              <div id= "toggle3name"><li><h4>Development & Annual Dinner<img src="../lwvaa/IMAGES/smallPlus.png" style="float:right" ></h4></li></div>
+                <div id="toggle3"><p>This team assists with fundraising activities and donor development, to include the all the activities below:<br>
+                 Member Giving - Matching Donations, End of Year Giving<br>Social Giving - Giving Tuesday, Amplify, End of Year Giving & other key dates<br>Events - Celebrating Democracy Dinner, fundraising opportunities such as Austin Classical Guitar Concert 10/5<br>Corporate Giving - Sponsorships, Matching Donor<br>Grant Giving</p></div>
+                </ul></div>
+            </div>       
         <div class="group2">
-            <h4>Community Relations</h4>
+            <h4>Community Relations<img src="../lwvaa/IMAGES/smallPlus.png" style="float:right" /></h4>
             <p>This group is responsible for build and sustain relationships between the League and other community, civic, and business organizations, as well as all fundraising efforts.</p>
         </div>
         <img class="image" src="Images/Body group.jpg">
@@ -35,15 +44,17 @@
     
     <div class="card">
         <div class="group">
-            <h4>Capitol Corps</h4>
+            <h4>Capitol Corps<img src="../lwvaa/IMAGES/smallPlus.png" style="float:right" /></h4>
             <p>Capitol Corps members are available throughout the legislative session to register the League’s position on bills and/or submit testimony (electronic, paper or oral). If Capitol Corp volunteers are interested in a particular issue, they can ask to be assigned to a certain Issue Chair. All League positions and testimony are researched/developed/written by LWV Issue Chairs. Capitol Corp members provide the final, necessary step at the Capitol to have the League’s position recorded. Training for the exciting and vital position will be provided.</p>
         </div>
         <div class="group2">
-            <h4>Communications</h4>
+            <h4>Communications<img src="../lwvaa/IMAGES/smallPlus.png" style="float:right" /></h4>
             <p>Support communication efforts both within the League and to external partners and the public, such as the newsletter and the website.</p>
         </div>
         <img class="image" src="Images/Button.jpg">
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../lwvaa/js/membership_opportunities.js"></script>  
 </body>
 </html>

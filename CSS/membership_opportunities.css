@@ -45,5 +45,33 @@ h4 {
 }
 
 p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.025em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-left: 50px;
+    width: 550px;
+}
+#toggleName, #toggle2name, #toggle3Name {
+    cursor: pointer;
+}
+
+#toggle2, #toggle3 {
+    margin-left: 50px;
+    width: 550px;
+}
+#dropdown, #toggle2, #toggle3 {
+    display: none;
 }
