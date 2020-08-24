@@ -9,17 +9,21 @@
     "group image"
     "group2 image"
 }
-
+.desc{ 
+    margin-top: -15px;
+}
 .group {
     grid-area: group;
     max-width: 600px;
     max-height: fit-content;
+    margin-top: -25px;
 }
 
 .group2 {
     grid-area: group2;
     max-width: 600px;
     max-height: fit-content;
+    margin-top: -25px;
 }
 
 .image {
@@ -97,9 +101,21 @@ ul {
 li {
     margin-left: 50px;
     width: 550px;
+    padding-top: 8px;
+    border-bottom: 1px solid black;
 }
 #toggleName, #toggle2name, #toggle3name {
     cursor: pointer;
+}
+
+#toggle2name, #toggle3name {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.025em;
+ 
 }
 
 #toggle2, #toggle3 {
@@ -108,6 +124,15 @@ li {
 }
 #dropdown, #toggle2, #toggle3 {
     display: none;
+}
+
+#dropdown{
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+#toggleDesc{
+    margin-top: -15px;
 }
 
 @media only screen and (max-width: 600px){
