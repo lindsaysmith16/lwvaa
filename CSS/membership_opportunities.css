@@ -39,13 +39,42 @@
     "image group"
     "image group2"
 }
+h1 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 65px;
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.025em;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 53px;
+    letter-spacing: -0.025em;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 118%;
+    letter-spacing: 0.025em;
+    border-bottom: 1px solid black;
+}
 
 h4 {
     font-family: 'Merriweather', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 35px;
     border-bottom: 1px solid black;
 }
 
@@ -69,7 +98,7 @@ li {
     margin-left: 50px;
     width: 550px;
 }
-#toggleName, #toggle2name, #toggle3Name {
+#toggleName, #toggle2name, #toggle3name {
     cursor: pointer;
 }
 
@@ -79,4 +108,49 @@ li {
 }
 #dropdown, #toggle2, #toggle3 {
     display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        margin-top: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas: 
+        "image"
+        "group"
+        "group2"
+    }
+    .card2 {
+        margin-top: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px ;
+        grid-template-areas: 
+        "image"
+        "group"
+        "group2"
+    }
+    .image {
+        grid-area: image;
+        max-width: 300px;
+        max-height: auto;
+        justify-items: center;
+      }
+      .group {
+        grid-area: group;
+        max-width: 300px;
+        max-height: fit-content;
+    }
+    
+    .group2 {
+        grid-area: group2;
+        max-width: 300px;
+        max-height: fit-content;
+    }
+    
 }
