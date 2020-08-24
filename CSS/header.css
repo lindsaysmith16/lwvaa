@@ -85,13 +85,25 @@ p {
     padding-top: 31px;
     padding-left: 31px;
     padding-right: 31px;
-    height: 190px;
+    height: 159px;
     margin: 0 auto;
     /* border: 1px solid black; */
     background-color: #4D1E53;
 }
 
+.topRow {
+    display: flex;
+    justify-content: space-between;
+}
+
 .logoContainer {
+}
+
+.ctaNsearch {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 45px;
 }
 
 /* Button Styles */
@@ -99,8 +111,6 @@ p {
 .makeAdonationButton {
     display: flex;
     justify-content: center;
-    position: absolute;
-    margin-left: 835px;
     background: #EAA932;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
@@ -109,12 +119,12 @@ p {
     text-transform: uppercase;
     width: 288px;
     text-decoration: none;
-    color: #4D1E53;
+    color: #272727;
 }
 
 .makeAdonationButtonText {
     text-decoration: none;
-    color: #4D1E53;
+    color: #272727;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -128,8 +138,6 @@ p {
 
 .searchBar {
     display: flex;
-    position: absolute;
-    margin-left: 1151px;
     background: white;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
@@ -172,7 +180,7 @@ p {
 
 .primaryNav{
     height: 61px;
-    margin-top: 49px;
+    margin-top: 18px;
 }
 
 .homeIcon {
