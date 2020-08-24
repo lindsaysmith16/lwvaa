@@ -41,7 +41,12 @@
 }
 
 h4 {
-    font-size: 24px;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    border-bottom: 1px solid black;
 }
 
 p {
