@@ -2,13 +2,27 @@
     margin-top: 60px;
     margin-left: 110px;
     margin-right: 110px;
+    grid-gap: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "group image"
     "group2 image"
+}   
+    .card2 {
+        margin-top: 60px;
+        margin-left: 110px;
+        margin-right: 110px;
+        grid-gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "image group"
+        "image group2"
 }
+
 .desc{ 
     margin-top: -15px;
 }
@@ -29,20 +43,9 @@
 .image {
     grid-area: image;
     max-width: 600px;
-    max-height: auto;
+    height: auto;
   }
 
-.card2 {
-    margin-top: 60px;
-    margin-left: 110px;
-    margin-right: 110px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "image group"
-    "image group2"
-}
 h1 {
     font-family: 'Merriweather', serif;
     font-style: normal;
@@ -135,47 +138,42 @@ li {
     margin-top: -15px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .card{
-        margin-top: 60px;
-        margin-left: 50px;
-        margin-right: 50px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 300px 300px;
-        grid-template-areas: 
+        grid-template-rows: 300px 1fr 300px;
+        grid-template-areas:
         "image"
         "group"
         "group2"
     }
     .card2 {
-        margin-top: 60px;
-        margin-left: 50px;
-        margin-right: 50px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 300px 300px ;
+        grid-template-rows: 300px 1fr 300px;
         grid-template-areas: 
         "image"
         "group"
         "group2"
     }
     .image {
+        padding: auto;
         grid-area: image;
         max-width: 300px;
         max-height: auto;
-        justify-items: center;
-      }
+    }
       .group {
+        padding: auto;
         grid-area: group;
-        max-width: 300px;
-        max-height: fit-content;
+        max-width: 300px;;
+        max-height: auto;
     }
     
     .group2 {
+        padding: auto;
         grid-area: group2;
         max-width: 300px;
-        max-height: fit-content;
+        max-height: auto;
     }
-
-}
+}   
