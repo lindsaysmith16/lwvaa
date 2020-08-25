@@ -96,6 +96,15 @@ p {
 }
 
 .logoContainer {
+    display: flex;
+}
+
+.logoContainerMobile {
+    display: none;
+}
+
+.hamburgerMenu {
+    display: none;
 }
 
 .ctaNsearch {
@@ -322,5 +331,40 @@ p {
 .contactUs:hover {
     border-top: 3px solid #E8F1F7
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 1080px) {
+    #navContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        padding-top: 39px;
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 66px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        background-color: #4D1E53;
+    }
+    .hamburgerMenu {
+        display: flex;
+        height: 45px;
+        width: 45px;
+    }
+    .navBar {
+      display: none;
+    }
+    .ctaNsearch {
+        display: none;
+    }
+
+    .logoContainer {
+        display: none;
+    }
+
+    .logoContainerMobile {
+        display: flex;
+    }
 
 
