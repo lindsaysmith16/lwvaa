@@ -1,0 +1,237 @@
+/* Global Style */
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+#wrap {
+    margin: 0 auto;
+    background-color: #4D1E53;
+}    
+h1 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 65px;
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.025em;
+}
+
+h2{
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 53px;
+    letter-spacing: -0.025em;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 118%;
+    letter-spacing: 0.025em;
+}
+
+h4 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
+    
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.025em;
+}
+
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.025em;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.025em;
+}
+
+/* Footer Elements */
+
+
+#footerContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    padding-top: 31px;
+    padding-left: 31px;
+    padding-right: 31px;
+    height: 90px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    color: #E8F1F7;
+    background-color: #4D1E53;
+}
+
+.stayConnectedWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 31px;
+    padding-right: 31px;
+    max-width: 1440px;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    color: #E8F1F7;
+}
+
+.middleWrapper {
+    margin-top: -22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialWrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.socialLink {
+    margin-top: -18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.bottomButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 45px;
+}
+
+.copyrightBar {
+    background: #272727;
+}
+
+.copywrightWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 31px;
+    padding-right: 31px;
+    max-width: 1440px;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14pt;
+    color: white;
+    height: 44px;
+}
+
+/* Button Styles */
+
+.makeAdonationButton2 {
+    display: flex;
+    justify-content: center;
+    background: #EAA932;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 288px;
+    text-decoration: none;
+    color: #272727;
+}
+
+.makeAdonationButtonTex2 {
+    text-decoration: none;
+    color: #272727;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16pt;
+    line-height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.webMasterButton {
+    display: flex;
+    justify-content: center;
+    background: #E8F1F7;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 288px;
+    text-decoration: none;
+    color: #272727;
+}
+
+.webMasterButtonText {
+    text-decoration: none;
+    color: #272727;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16pt;
+    line-height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1080px) {
+    #footerContainer {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        padding-top: 39px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin: 0 auto;
+        background-color: #4D1E53;
+    }
+    .hamburgerMenu {
+        display: flex;
+        height: 45px;
+        width: 45px;
+    }
+    .navBar {
+      display: none;
+    }
+    .ctaNsearch {
+        display: none;
+    }
+
+    .logoContainer {
+        display: none;
+    }
+
+    .logoContainerMobile {
+        display: flex;
+    }
