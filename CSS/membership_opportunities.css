@@ -1,8 +1,7 @@
 .card {
     margin-top: 60px;
-    margin-left: 110px;
-    margin-right: 110px;
     grid-gap: 1rem;
+    justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -10,17 +9,16 @@
     "group image"
     "group2 image"
 }   
-    .card2 {
-        margin-top: 60px;
-        margin-left: 110px;
-        margin-right: 110px;
-        grid-gap: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "image group"
-        "image group2"
+.card2 {
+    margin-top: 60px;
+    grid-gap: 1rem;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "image group"
+    "image group2"
 }
 
 .desc{ 
@@ -43,7 +41,7 @@
 .image {
     grid-area: image;
     max-width: 600px;
-    height: auto;
+    max-height: fit-content;
   }
 
 h1 {
@@ -141,8 +139,9 @@ li {
 @media only screen and (max-width: 900px){
     .card{
         display: grid;
+        justify-content: space-evenly;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 1fr 300px;
+        grid-template-rows: 450px 1fr 1fr;
         grid-template-areas:
         "image"
         "group"
@@ -150,30 +149,84 @@ li {
     }
     .card2 {
         display: grid;
+        justify-content: space-evenly;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 1fr 300px;
+        grid-template-rows: 450px 1fr 1fr;
         grid-template-areas: 
         "image"
         "group"
         "group2"
     }
     .image {
-        padding: auto;
         grid-area: image;
-        max-width: 300px;
-        max-height: auto;
+        max-width: 600px;
+        max-height: fit-content;
     }
       .group {
-        padding: auto;
         grid-area: group;
-        max-width: 300px;;
-        max-height: auto;
+        max-width: 600px;
+        max-height: fit-content;
     }
     
     .group2 {
-        padding: auto;
         grid-area: group2;
+        max-width: 600px;
+        max-height: fit-content;
+    }
+}   
+
+@media only screen and (max-width: 599px){
+    .card{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 225px 1fr 1fr;
+        grid-template-areas:
+        "image"
+        "group"
+        "group2"
+    }
+    .card2 {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 225px 1fr 1fr;
+        grid-template-areas: 
+        "image"
+        "group"
+        "group2"
+    }
+    .image {
+        grid-area: image;
+        width: 300px;
+        max-height: fit-content;
+    }
+      .group {
+        grid-area: group;
+        min-width: auto;
         max-width: 300px;
-        max-height: auto;
+        max-height: fit-content;
+    }
+    
+    .group2 {
+        grid-area: group2;
+        min-width: auto;
+        max-width: 300px;
+        max-height: fit-content;
+    }
+
+    ul {
+        max-width: 300px;
+        
+    }
+
+    li {
+        max-width: 250px;
+        
+    }
+
+    #toggle2, #toggle3 {
+        max-width: 250px;
+        
     }
 }   
