@@ -236,6 +236,7 @@ p {
         padding-right: 20px;
         padding-left: 10px;
     }
+}
     
     .bottomButtons {
         display: flex;
@@ -260,4 +261,5 @@ p {
     .webMasterButton {
         margin-top: 24px;
         margin-bottom: 6px;
+    }
     }

@@ -187,7 +187,7 @@ p {
     /* justify-content: inherit; */
 }
 
-.primaryNav { */
+.primaryNav {
     height: 61px;
     margin-top: 18px;
 }
@@ -366,5 +366,5 @@ p {
     .logoContainerMobile {
         display: flex;
     }
-
+}
 
