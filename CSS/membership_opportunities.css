@@ -1,3 +1,14 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    width: 100%;
+}
+
+#wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 h1 {
     font-family: 'Merriweather', serif;
     font-style: normal;
@@ -37,6 +48,26 @@ h4 {
     border-bottom: 1px solid black;
 }
 
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.025em;
+}
+
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.025em;
+}
+
 p {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -57,19 +88,20 @@ p {
     height: 400px;
     position: relative;
     width: 100%;
+    margin-bottom: 160px;
 }
 
 .pageTitle {
     background-color: #0A5894;
     display: flex;
-    max-width: 450px;
-    padding-right: 10px;
+    max-width: 400px;
+    padding-right: 30px;
     padding-left: 8%;
     text-align: left;
     position: absolute;
     max-height: 150px;
     align-items: center;
-    bottom: -60px;
+    bottom: -120px;
     color: white;
 }
 
@@ -228,7 +260,7 @@ li {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 18px;
     line-height: 45px;
     text-transform: uppercase;
     letter-spacing: 0.075em;
@@ -342,10 +374,11 @@ li {
     text-align: center;
     height: 61px; 
     transition: 0.3s;
+    border-top: 3px solid #811F5E;
 }
  /* active state */
 .getInvolvedNav:hover {
-    border-top: 3px solid #E8F1F7
+    border-top: 3px solid #E8F1F7;
 }
 
 .membershipNav {
@@ -364,7 +397,7 @@ li {
 }
  /* active state */
 .membershipNav:hover {
-    border-top: 3px solid #E8F1F7
+    border-top: 3px solid #E8F1F7;
 }
 
 .newsAndEventsNav {
@@ -383,7 +416,7 @@ li {
 }
  /* active state */
 .newsAndEventsNav:hover {
-    border-top: 3px solid #E8F1F7
+    border-top: 3px solid #E8F1F7;
 }
 
 .aboutUsNav {
@@ -402,7 +435,7 @@ li {
 }
  /* active state */
 .aboutUsNav:hover {
-    border-top: 3px solid #E8F1F7
+    border-top: 3px solid #E8F1F7;
 }
 
 .contactUsNav {
@@ -421,7 +454,7 @@ li {
 }
  /* active state */
 .contactUsNav:hover {
-    border-top: 3px solid #E8F1F7
+    border-top: 3px solid #E8F1F7;
 }
 
 /* Footer Elements */
@@ -452,6 +485,10 @@ li {
     padding-bottom: 14px;
     color: #E8F1F7;
     background-color: #4D1E53;
+}
+
+.stayConnectedWrapper h3 {
+    border: none;
 }
 
 .middleWrapper {
@@ -522,7 +559,7 @@ li {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 18px;
     line-height: 45px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -548,7 +585,7 @@ li {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 18px;
     line-height: 45px;
     text-transform: uppercase;
     letter-spacing: 0.025em;
@@ -557,6 +594,38 @@ li {
 /* Media Queries */
 
 @media only screen and (max-width: 1080px) {
+    #navContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        padding-top: 39px;
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 66px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        background-color: #4D1E53;
+    }
+    .hamburgerMenu {
+        display: flex;
+        height: 45px;
+        width: 45px;
+    }
+    .navBar {
+      display: none;
+    }
+    .ctaNsearch {
+        display: none;
+    }
+
+    .logoContainer {
+        display: none;
+    }
+
+    .logoContainerMobile {
+        display: flex;
+    }
+
     #footerContainer {
         display: flex;
         max-width: 1440px;
@@ -596,59 +665,9 @@ li {
     }
 }
 
-    @media only screen and (max-width: 700px) {
-    
-    #footerContainer {
-        height: 208px;
-    }
-        
-    .bottomButtons {
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-wrap: wrap-reverse;
-        margin-top: 80px;
-        max-width: 300px;
-    }
-
-    .webMasterButton {
-        margin-top: 24px;
-        margin-bottom: 6px;
-    }
-}
-
-/* Media Queries */
-
-@media only screen and (max-width: 1080px) {
-    #navContainer {
-        display: flex;
-        flex-direction: column;
-        max-width: 1440px;
-        padding-top: 39px;
-        padding-left: 24px;
-        padding-right: 24px;
-        height: 66px;
-        margin: 0 auto;
-        /* border: 1px solid black; */
-        background-color: #4D1E53;
-    }
-    .hamburgerMenu {
-        display: flex;
-        height: 45px;
-        width: 45px;
-    }
-    .navBar {
-      display: none;
-    }
-    .ctaNsearch {
-        display: none;
-    }
-
-    .logoContainer {
-        display: none;
-    }
-
-    .logoContainerMobile {
-        display: flex;
+@media only screen and (max-width: 1000px){
+    .heroImage {
+        height: 350px;
     }
 }
 
@@ -690,6 +709,36 @@ li {
         max-height: fit-content;
     }
 }   
+
+@media only screen and (max-width: 700px) {
+    
+   .pageTitle {
+       padding-right: 10px;
+   }
+   
+    #footerContainer {
+        height: 208px;
+    }
+        
+    .bottomButtons {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        margin-top: 80px;
+        max-width: 300px;
+    }
+
+    .webMasterButton {
+        margin-top: 24px;
+        margin-bottom: 6px;
+    }
+}
+
+@media only screen and (max-width: 615px) { 
+    .heroImage {
+        height: 250px;
+    }
+}
 
 @media only screen and (max-width: 599px){
     .card{

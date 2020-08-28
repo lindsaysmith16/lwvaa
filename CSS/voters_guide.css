@@ -336,45 +336,6 @@ p {
     border-top: 3px solid #E8F1F7
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 1080px) {
-    #navContainer {
-        display: flex;
-        flex-direction: column;
-        max-width: 1440px;
-        padding-top: 39px;
-        padding-left: 24px;
-        padding-right: 24px;
-        height: 66px;
-        margin: 0 auto;
-        /* border: 1px solid black; */
-        background-color: #4D1E53;
-    }
-    .hamburgerMenu {
-        display: flex;
-        height: 45px;
-        width: 45px;
-    }
-    .navBar {
-      display: none;
-    }
-    .ctaNsearch {
-        display: none;
-    }
-
-    .logoContainer {
-        display: none;
-    }
-
-    .logoContainerMobile {
-        display: flex;
-    }
-}
-
-
-
-
 /* Hero Image Style */
 
 .heroImage {
@@ -823,6 +784,38 @@ p {
 /* Media Queries */
 
 @media only screen and (max-width: 1080px) {
+    #navContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        padding-top: 39px;
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 66px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        background-color: #4D1E53;
+    }
+    .hamburgerMenu {
+        display: flex;
+        height: 45px;
+        width: 45px;
+    }
+    .navBar {
+      display: none;
+    }
+    .ctaNsearch {
+        display: none;
+    }
+
+    .logoContainer {
+        display: none;
+    }
+
+    .logoContainerMobile {
+        display: flex;
+    }
+    
     #footerContainer {
         display: flex;
         max-width: 1440px;
@@ -858,26 +851,6 @@ p {
         display: flex;
         justify-content: space-between;
         width: 600px;
-    }
-}
-
-    @media only screen and (max-width: 700px) {
-    
-    #footerContainer {
-        height: 208px;
-    }
-        
-    .bottomButtons {
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-wrap: wrap-reverse;
-        margin-top: 80px;
-        max-width: 300px;
-    }
-
-    .webMasterButton {
-        margin-top: 24px;
-        margin-bottom: 6px;
     }
 }
 
@@ -1019,6 +992,27 @@ p {
         padding-right: 10%;
     }
 }
+
+@media only screen and (max-width: 700px) {
+    
+    #footerContainer {
+        height: 208px;
+    }
+        
+    .bottomButtons {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        margin-top: 80px;
+        max-width: 300px;
+    }
+
+    .webMasterButton {
+        margin-top: 24px;
+        margin-bottom: 6px;
+    }
+}
+
 @media only screen and (max-width: 615px) { 
     .heroImage {
         height: 250px;
