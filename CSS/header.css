@@ -187,7 +187,7 @@ p {
     /* justify-content: inherit; */
 }
 
-.primaryNav { */
+.primaryNav {
     height: 61px;
     margin-top: 18px;
 }
@@ -199,7 +199,7 @@ p {
     height: 49px;
 }
 
-.votersGuide {
+.votersGuideNav {
     width: 100%;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
@@ -214,11 +214,11 @@ p {
     transition: 0.3s;
 }
  /* active state */
-.votersGuide:hover {
+.votersGuideNav:hover {
     border-top: 3px solid #E8F1F7
 }
 
-.voterInfo {
+.voterInfoNav {
     width: 100%;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
@@ -233,11 +233,11 @@ p {
     transition: 0.3s;
 }
  /* active state */
-.voterInfo:hover {
+.voterInfoNav:hover {
     border-top: 3px solid #E8F1F7;
 }
 
-.getInvolved {
+.getInvolvedNav {
     width: 100%;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
@@ -252,11 +252,11 @@ p {
     transition: 0.3s;
 }
  /* active state */
-.getInvolved:hover {
+.getInvolvedNav:hover {
     border-top: 3px solid #E8F1F7
 }
 
-.membership {
+.membershipNav {
     width: 100%;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
@@ -271,11 +271,11 @@ p {
     transition: 0.3s;
 }
  /* active state */
-.membership:hover {
+.membershipNav:hover {
     border-top: 3px solid #E8F1F7
 }
 
-.newsAndEvents {
+.newsAndEventsNav {
     width: 100%;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
@@ -290,11 +290,11 @@ p {
     transition: 0.3s;
 }
  /* active state */
-.newsAndEvents:hover {
+.newsAndEventsNav:hover {
     border-top: 3px solid #E8F1F7
 }
 
-.aboutUs {
+.aboutUsNav {
     width: 100%;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
@@ -309,11 +309,11 @@ p {
     transition: 0.3s;
 }
  /* active state */
-.aboutUs:hover {
+.aboutUsNav:hover {
     border-top: 3px solid #E8F1F7
 }
 
-.contactUs {
+.contactUsNav {
     width: 100%;
     background-color: #4D1E53;
     font-family: 'Lato', sans-serif;
@@ -328,7 +328,7 @@ p {
     transition: 0.3s;
 }
  /* active state */
-.contactUs:hover {
+.contactUsNav:hover {
     border-top: 3px solid #E8F1F7
 }
 
@@ -366,5 +366,6 @@ p {
     .logoContainerMobile {
         display: flex;
     }
+}
 
 

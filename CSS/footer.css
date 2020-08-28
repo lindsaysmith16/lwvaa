@@ -101,6 +101,7 @@ p {
     padding-top: 0px;
     padding-bottom: 14px;
     color: #E8F1F7;
+    background-color: #4D1E53;
 }
 
 .middleWrapper {
@@ -242,6 +243,7 @@ p {
         justify-content: space-between;
         width: 600px;
     }
+}
 
     @media only screen and (max-width: 700px) {
     
@@ -261,3 +263,4 @@ p {
         margin-top: 24px;
         margin-bottom: 6px;
     }
+}

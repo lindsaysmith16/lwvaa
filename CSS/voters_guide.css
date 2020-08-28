@@ -76,6 +76,301 @@ p {
 }
 
 /* Header Nav Style */
+/* Nav Elements */
+
+
+#navContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    padding-top: 31px;
+    padding-left: 31px;
+    padding-right: 31px;
+    height: 159px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    background-color: #4D1E53;
+}
+
+.topRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    display: flex;
+}
+
+.logoContainerMobile {
+    display: none;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.ctaNsearch {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 45px;
+}
+
+/* Button Styles */
+
+.makeAdonationButton {
+    display: flex;
+    justify-content: center;
+    background: #EAA932;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 288px;
+    text-decoration: none;
+    color: #272727;
+}
+
+.makeAdonationButtonText {
+    text-decoration: none;
+    color: #272727;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16pt;
+    line-height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+}
+
+/* Search Bar */
+
+.searchBar {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    width: 288px;
+    text-decoration: none;
+    color: #4D1E53;
+}
+
+.magBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8F1F7;
+    margin: 3px;
+    height: 39px;
+    width: 39px;
+    border-radius: 3px;
+}
+
+.searchBarText {
+    text-decoration: none;
+    color: #4D1E53;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16pt;
+    line-height: 45px;
+    letter-spacing: 0.075em;
+}
+
+/* Navigation Menu Items */
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: inherit; */
+}
+
+.primaryNav {
+    height: 61px;
+    margin-top: 18px;
+}
+
+.homeIcon {
+    background-color: #4D1E53;
+    padding-top: 12px;
+    width: 100%;
+    height: 49px;
+}
+
+.votersGuideNav {
+    width: 100%;
+    background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    text-align: center;
+    height: 61px;
+    transition: 0.3s;
+}
+ /* active state */
+.votersGuideNav:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.voterInfoNav {
+    width: 100%;
+    background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    text-align: center;
+    height: 61px;
+    transition: 0.3s;
+}
+ /* active state */
+.voterInfoNav:hover {
+    border-top: 3px solid #E8F1F7;
+}
+
+.getInvolvedNav {
+    width: 100%;
+    background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    text-align: center;
+    height: 61px; 
+    transition: 0.3s;
+}
+ /* active state */
+.getInvolvedNav:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.membershipNav {
+    width: 100%;
+    background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    text-align: center;
+    height: 61px; 
+    transition: 0.3s;
+}
+ /* active state */
+.membershipNav:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.newsAndEventsNav {
+    width: 100%;
+    background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    text-align: center;
+    height: 61px; 
+    transition: 0.3s;
+}
+ /* active state */
+.newsAndEventsNav:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.aboutUsNav {
+    width: 100%;
+    background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    text-align: center;
+    height: 61px; 
+    transition: 0.3s;
+}
+ /* active state */
+.aboutUsNav:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+.contactUsNav {
+    width: 100%;
+    background-color: #4D1E53;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    text-align: center;
+    height: 61px; 
+    transition: 0.3s;
+}
+ /* active state */
+.contactUsNav:hover {
+    border-top: 3px solid #E8F1F7
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1080px) {
+    #navContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        padding-top: 39px;
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 66px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        background-color: #4D1E53;
+    }
+    .hamburgerMenu {
+        display: flex;
+        height: 45px;
+        width: 45px;
+    }
+    .navBar {
+      display: none;
+    }
+    .ctaNsearch {
+        display: none;
+    }
+
+    .logoContainer {
+        display: none;
+    }
+
+    .logoContainerMobile {
+        display: flex;
+    }
+}
+
+
 
 
 /* Hero Image Style */
@@ -342,6 +637,9 @@ p {
 .votersGuideButton:focus{
     outline: 3px solid #EAA932;
 }
+.votersGuideButton:hover{
+    background: rgba(129, 31, 94 0.75);
+}
 
 
 .buttons {
@@ -391,6 +689,194 @@ p {
 
 #openArrow {
     display: none;
+}
+
+#footerContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    padding-top: 31px;
+    padding-left: 31px;
+    padding-right: 31px;
+    height: 90px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    color: #E8F1F7;
+    background-color: #4D1E53;
+}
+
+.stayConnectedWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 31px;
+    padding-right: 31px;
+    max-width: 1440px;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    color: #E8F1F7;
+    background-color: #4D1E53;
+}
+
+.middleWrapper {
+    margin-top: -22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialWrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.socialLink {
+    margin-top: -18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.bottomButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 45px;
+}
+
+.copyrightBar {
+    background: #272727;
+}
+
+.copywrightWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 31px;
+    padding-right: 31px;
+    max-width: 1440px;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14pt;
+    color: white;
+    height: 44px;
+}
+
+/* Button Styles */
+
+.makeAdonationButton2 {
+    display: flex;
+    justify-content: center;
+    background: #EAA932;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 288px;
+    text-decoration: none;
+    color: #272727;
+}
+
+.makeAdonationButtonTex2 {
+    text-decoration: none;
+    color: #272727;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16pt;
+    line-height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.webMasterButton {
+    display: flex;
+    justify-content: center;
+    background: #E8F1F7;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 288px;
+    text-decoration: none;
+    color: #272727;
+}
+
+.webMasterButtonText {
+    text-decoration: none;
+    color: #272727;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16pt;
+    line-height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1080px) {
+    #footerContainer {
+        display: flex;
+        max-width: 1440px;
+        height: 128px;
+        padding-top: 39px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin: 0 auto;
+        background-color: #4D1E53;
+    }
+
+    .stayConnectedWrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+    .middleWrapper {
+        margin-top: -22px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .socialLink {
+        margin-top: -36px;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+    
+    .bottomButtons {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+    }
+}
+
+    @media only screen and (max-width: 700px) {
+    
+    #footerContainer {
+        height: 208px;
+    }
+        
+    .bottomButtons {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        margin-top: 80px;
+        max-width: 300px;
+    }
+
+    .webMasterButton {
+        margin-top: 24px;
+        margin-bottom: 6px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -575,10 +1061,15 @@ p {
         padding-top: 10%;
     }
 
-    #moreInfoText {
+    .accordion {
         grid-area: moreInfoText;
         display: none;
     }
+
+    .accordion:active {
+        display: grid;
+    }
+    
 
     #openArrow {
         grid-area: openArrow;
