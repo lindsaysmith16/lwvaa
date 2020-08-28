@@ -93,6 +93,30 @@ p {
     letter-spacing: 0.025em;
 }
 
+.heroImage {
+    background-image: url(../IMAGES/Header\ Group.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    width: 100%;
+}
+
+.pageTitle {
+    background-color: #0A5894;
+    display: flex;
+    max-width: 500px;
+    padding-right: 30px;
+    padding-left: 8%;
+    text-align: right;
+    position: absolute;
+    max-height: 150px;
+    align-items: center;
+    bottom: -60px;
+    color: white;
+}
+
 ul {
     margin: 0;
     padding: 0;
