@@ -214,11 +214,13 @@ p {
     text-align: center;
     height: 61px;
     transition: 0.3s;
+    border-top: 3px solid #811F5E;
 }
- /* active state */
+ /* hover state */
 .votersGuideNav:hover {
     border-top: 3px solid #E8F1F7
 }
+
 
 .voterInfoNav {
     width: 100%;
@@ -638,7 +640,7 @@ p {
     outline: 3px solid #EAA932;
 }
 .votersGuideButton:hover{
-    background: rgba(129, 31, 94 0.75);
+    background: rgba(129, 31, 94, 0.75);
 }
 
 
@@ -1015,6 +1017,11 @@ p {
     .pastIssues {
         padding-left: 10%;
         padding-right: 10%;
+    }
+}
+@media only screen and (max-width: 615px) { 
+    .heroImage {
+        height: 250px;
     }
 }
 
