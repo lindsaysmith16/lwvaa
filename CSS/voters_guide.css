@@ -336,6 +336,7 @@ p {
     border-top: 3px solid #E8F1F7
 }
 
+/*Voters Guide Page Style*/
 /* Hero Image Style */
 
 .heroImage {
@@ -362,7 +363,7 @@ p {
     color: white;
 }
 
-/*Widget Style*/
+/*Widget Style - This Section was Made with Grid*/
 /*font-family: rift, sans-serif;*/
 .vote411InfoSmall {
     display:none;
@@ -532,7 +533,7 @@ p {
     max-height: 125px;
 }
 
-/*Two Columns Section Style*/
+/*Two Columns Section Style - This Section was Made with Grid*/
 
 .twoColumns {
     display: grid;
@@ -653,6 +654,8 @@ p {
 #openArrow {
     display: none;
 }
+
+/*Footer Style*/
 
 #footerContainer {
     display: flex;
@@ -1018,6 +1021,8 @@ p {
         height: 250px;
     }
 }
+
+/*Mobile Media Query*/
 
 @media only screen and (max-width: 600px) {
     

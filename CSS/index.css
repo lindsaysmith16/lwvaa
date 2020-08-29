@@ -333,44 +333,8 @@ p {
     border-top: 3px solid #E8F1F7
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 1080px) {
-    #navContainer {
-        display: flex;
-        flex-direction: column;
-        max-width: 1440px;
-        padding-top: 39px;
-        padding-left: 24px;
-        padding-right: 24px;
-        height: 66px;
-        margin: 0 auto;
-        /* border: 1px solid black; */
-        background-color: #4D1E53;
-    }
-    .hamburgerMenu {
-        display: flex;
-        height: 45px;
-        width: 45px;
-    }
-    .navBar {
-      display: none;
-    }
-    .ctaNsearch {
-        display: none;
-    }
-
-    .logoContainer {
-        display: none;
-    }
-
-    .logoContainerMobile {
-        display: flex;
-    }
-}
-
-
-/* Hero Image Style */
+/*Home Page Body Style*/
+/* Hero Image Style - This Section was made with Grid*/
 .heroImage {
     background-image: url(../Images/young-voter-at-booth.jpg);
     background-position: center;
@@ -431,7 +395,7 @@ p {
     outline: 3px solid #811F5E;
 }
 
-/* Three Pillars Content Style */
+/* Three Pillars Content Style - This Section was Made with Flex*/
 .intro {
     background-color: #E8F1F7;
     display: block;
@@ -496,7 +460,7 @@ p {
 .textTP p {
     margin-top: 0;
 }
-/* Votes Guide Info Style */
+/* Votes Guide Info Style - This Section was made with Grid*/
 
 #twoColumnsInfo {
     display: grid;
@@ -514,7 +478,7 @@ p {
 }
 
 
-/* Vote411 Info Style */
+/* Vote411 Info Style - This Section was made with Grid*/
 
 .vote411Info {
         grid-area: vote411Info;
@@ -744,8 +708,81 @@ p {
 }
 
 /* Media Queries */
+@media only screen and (max-width: 1330px) {
+    h1 {
+        font-size: 58px;
+        line-height: 118.2%;
+    }
+
+    .vote411Info {
+        justify-content: space-around;
+    }
+
+    .vote411Button {
+        right: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .votersGuideButton {
+        left: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    h1 {
+        font-size: 46px;
+        line-height: 118.2%;
+    }
+    .heroImage {
+        height: 350px;
+    }
+    #CTA {
+        top: -100px;
+    }
+    .icons {
+        padding-top: 60px;
+    }
+}
 
 @media only screen and (max-width: 1080px) {
+    #navContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        padding-top: 39px;
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 66px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        background-color: #4D1E53;
+        }
+
+    .hamburgerMenu {
+        display: flex;
+        height: 45px;
+        width: 45px;
+        }
+
+    .navBar {
+        display: none;
+        }
+
+    .ctaNsearch {
+        display: none;
+        }
+    
+    .logoContainer {
+        display: none;
+        }
+    
+    .logoContainerMobile {
+        display: flex;
+        }
+    
     #footerContainer {
         display: flex;
         max-width: 1440px;
@@ -801,45 +838,6 @@ p {
     .webMasterButton {
         margin-top: 24px;
         margin-bottom: 6px;
-    }
-}
-
-@media only screen and (max-width: 1330px) {
-    h1 {
-        font-size: 58px;
-        line-height: 118.2%;
-    }
-
-    .vote411Info {
-        justify-content: space-around;
-    }
-
-    .vote411Button {
-        right: 0;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    
-    .votersGuideButton {
-        left: 0;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-
-@media only screen and (max-width: 1150px) {
-    h1 {
-        font-size: 46px;
-        line-height: 118.2%;
-    }
-    .heroImage {
-        height: 350px;
-    }
-    #CTA {
-        top: -100px;
-    }
-    .icons {
-        padding-top: 60px;
     }
 }
 
