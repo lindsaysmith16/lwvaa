@@ -1,16 +1,12 @@
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+$("#education").click(function(){
+    window.location = $(this).find("a").attr("href");
+    return false;
+})
 
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+$(document).ready(function(){
+  $("#menu").hover(function(){
+    $(".dropdown-content", this).slideDown(100);
+  }, function(){
+    $(".dropdown-content", this).stop().slideUp(100);
+  });
+})
