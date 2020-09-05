@@ -611,6 +611,10 @@ p {
     text-align: center;
 }
 
+.pastIssues {
+    padding-right: 30px;
+}
+
 #pastIssuesOptions {
     width: 350px;
     position: relative;
@@ -651,7 +655,7 @@ p {
     margin-top: 30px;
 }
 
-#openArrow {
+.openArrow {
     display: none;
 }
 
@@ -974,7 +978,7 @@ p {
     .twoColumns {
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 2fr 1fr;
-        grid-template-areas: "votersGuidePDF" "votersGuideMoreInfo" "pastIssues";
+        grid-template-areas: "votersGuidePDF" "votersGuideMoreInfo" "pastIssues" ;
     }
 
     .votersGuideMoreInfo {
@@ -1071,13 +1075,16 @@ p {
         grid-area: moreInfoText;
         display: none;
     }
-
-    .accordion:active {
-        display: grid;
-    }
     
+    .toggleOpen {
+        cursor: pointer; 
+    }
 
-    #openArrow {
+    .toggleClose {
+        cursor: pointer; 
+    }
+
+    .openArrow {
         grid-area: openArrow;
         display: grid;
         max-height: 50px;
@@ -1090,7 +1097,7 @@ p {
     }
 
     .votersGuideButton {
-        width: 300px;
+        width: 350px;
     }
     
 }
