@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/jis4vxg.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/52f26d62e9.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id=wrap>
@@ -191,10 +191,11 @@
             </select></div>
         </form>
     </div>
-    <div class="votersGuideMoreInfo">
-        <div class=votersGuideMoreInfoText toggle>
-            <h5 id="moreInfoHeading">More information on the Voters Guide</h5> <img src="Images/dashicons_arrow-down-alt2.png" id="openArrow">
-        <div class="accordion"><p id="moreInfoText" >New issues of the Voters Guide will be published prior to the start of early voting for each election.
+    <div class="container votersGuideMoreInfo">
+        <!--This is my jquery in mobile view (less than 600px screen size-->
+        <div class="votersGuideMoreInfoText toggle toggleOpen">
+            <h5 id="moreInfoHeading">More information on the Voters Guide</h5> <img src="Images/dashicons_arrow-down-alt2.png" class="openArrow">
+        <div class="accordion"><p id="moreInfoText" >New issues of the  Voters Guide will be published prior to the start of early voting for each election.
 
             The League of Women Voters Austin Area provides nonpartisan information on elections and voting. Our goal is to offer the complete list of all contests on your ballot, including state and local offices and propositions.
              
@@ -246,4 +247,12 @@
         </div>
     </div>  
 </footer></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/voters_guide.js"></script>
+
 </body>
+
+
+
+ 
