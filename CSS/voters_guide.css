@@ -611,6 +611,10 @@ p {
     text-align: center;
 }
 
+.pastIssues {
+    padding-right: 30px;
+}
+
 #pastIssuesOptions {
     width: 350px;
     position: relative;
@@ -1093,7 +1097,7 @@ p {
     }
 
     .votersGuideButton {
-        width: 300px;
+        width: 350px;
     }
     
 }

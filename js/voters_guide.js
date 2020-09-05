@@ -13,7 +13,7 @@ $(".toggleOpen").on("click", function(){
     else { 
         $(".accordion").slideDown();
 
-        $(".twoColumns").css("grid-template-rows", "2fr 4fr 1fr");
+        $(".twoColumns").css("grid-template-rows", "2fr 3.75fr 1fr");
 
 
 
